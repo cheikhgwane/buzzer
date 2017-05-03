@@ -14,9 +14,9 @@
 <body>
   <nav class="blue darken" role="navigation">
     <div class="nav-wrapper container ">
-      <a id="logo-container" href="#" class="brand-logo"><img src="img/lIkane.png" style="width:15%; heigth:8%; margin-top:2%" ></img> </a>
+      <a id="logo-container" href="#" class="brand-logo"><img src="img/Jangando-logo.png" ></img> </a>
       <ul class="right hide-on-med-and-down nav-text">
-        <li title="Materiel"<a   href="#materiel" style="color:white;"> <i class="material-icons">phonelink_setup</i></a></li><!--Material icons-->
+        <li title="Materiel"><a   href="#materiel" style="color:white;"> <i class="material-icons">phonelink_setup</i></a></li><!--Material icons-->
         <li title="Logiciel"><a   href="#logiciel" style="color:white;"> <i class="material-icons">airplay</i></a></li><!--Logiciel-->
         <li title="Pricing"><a   href="#pricing" style="color:white;">  <i class="material-icons">shop</i></a></li><!--Pricing-->
         <li title="Contacts"><a   href="#contactus" style="color:white;"><i class="material-icons">settings_phone</i></a></li><!--Contact US-->
@@ -24,7 +24,7 @@
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li title="Materiel"<a   href="#materiel" style="color:white;"> <i class="material-icons">phonelink_setup</i></a></li><!--Material icons-->
+        <li title="Materiel"><a  id="materiel" href="#materiel" style="color:white;"> <i class="material-icons">phonelink_setup</i></a></li><!--Material icons-->
         <li title="Logiciel"><a   href="#logiciel" style="color:white;"> <i class="material-icons">airplay</i></a></li><!--Logiciel-->
         <li title="Pricing"><a   href="#pricing" style="color:white;">  <i class="material-icons">shop</i></a></li><!--Pricing-->
         <li title="Contacts"><a   href="#contactus" style="color:white;"><i class="material-icons">settings_phone</i></a></li><!--Contact US-->
@@ -248,16 +248,19 @@
     <div class="section">
 
       <div class="row">
-        <div class="col s12 m12 offeset-m1" >
+        
+           <div class="col s12 m12 " >
            <h2 class="center"><i class="material-icons" style="margin-right:3%">shopping_cart</i>Pricing</h2>
            
-           <div class="card col s12 m6">
+           <div class="card col s12 m4">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="img/Version1.2/IMG_20170426_173706.2835.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">QuizzBuzzer Materiel<i class="material-icons right">more_vert</i></span>
-              <a class="waves-effect waves-light btn blue darken" href="#modal1"  ><i class="material-icons left">shopping_cart</i>Commander</a>
+              <span class=" activator grey-text text-darken-4">QuizzBuzzer Materiel<i class="material-icons right">visibility</i></span>
+              <br>
+              <a class="waves-effect waves-light btn blue darken col s4 m4 " onclick="ajouterPanier('Materiel');"  id="ajmat1" title="Ajouter au panier"><i class="material-icons left">shopping_cart</i><i class="material-icons rigth">add</i></a>
+              <br>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">QuizzBuzzer Materiel<i class="material-icons right">close</i></span>
@@ -272,13 +275,91 @@
           1 Rallonge USB <br>
           <h6>Prix</h6><hr>
           <h5 class="teal-text"  >250.000 XOF</h5>
+        <a class="waves-effect waves-light btn blue darken col s4 m4 " onclick="ajouterPanier('Materiel');"  id="ajmat2" title="Ajouter au panier"><i class="material-icons left">shopping_cart</i><i class="material-icons rigth">add</i></a>
           </p>
             </div>
     </div>
+
+      <div class="card col s12 m4" >
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/webapp/2017-04-26 17_00_03-.png">
+            </div>
+            <div class="card-content">
+              <span class=" activator grey-text text-darken-4"> QuizzBuzzer online<i class="material-icons right">visibility</i></span>
+              <br>
+             <a class="waves-effect waves-light btn blue darken col s4 m4" onclick="ajouterPanier('online');" id="ajon1" ><i class="material-icons left">shopping_cart</i><i class="material-icons rigth">add</i></a>
+             <br>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">QuizzBuzzer online<i class="material-icons right">close</i></span>
+              <p>
+                <i class="material-icons green-text">done_all</i> Stockage de la configuration et des
+                historiques des tournois en ligne.<br>
+                <i class="material-icons green-text">done_all</i> 
+                Plus besoin d’internet une fois le match démarré.<br>
+                <i class="material-icons green-text">done_all</i> Accessible depuis tout ordinateur disposant une connexion internet.
+                <hr>
+                <h6 class="teal-text col s12 m12"> <i class="material-icons">shopping_basket</i>15.000 XOF/an</h6>
+                <h6 class="right col s6 m7">  La 1ère année est offerte .<i class="material-icons">announcement</i></h6>
+                 <a class="waves-effect waves-light btn blue darken  col s4 m5" onclick="ajouterPanier('online');" title="Ajouter dans le Panier" id="ajon2"><i class="material-icons left">add</i></a>
+                </p>
+            </div>
+            </div>
+
+            <div class="card col s12 m4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/Version1.2/IMG_20170426_173706.2835.jpg">
+                </div>
+                <div class="card-content">
+                  <span class=" activator grey-text text-darken-4">QuizzBuzzer Descktop<i class="material-icons right">visibility</i></span>
+                  <a class="waves-effect waves-light btn blue darken"  onclick="ajouterPanier('Descktop');" id="ajdesk1" ><i class="material-icons left">shopping_cart</i>Ajouter au panier</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">QuizzBuzzer Descktop<i class="material-icons right">close</i></span>
+                  <p>
+                    <i class="material-icons green-text">done_all</i> Stockage de la configuration et des
+                    historiques des tournois.<br>
+                    <i class="material-icons green-text">done_all</i> 
+                    Plus besoin d’internet une fois le match démarré.<br>
+                    <i class="material-icons red-text">close</i> Accessible depuis tout ordinateur disposant une connexion internet.
+                    <hr>
+                    <h6 class="teal-text col s12 m12"> <i class="material-icons">shopping_basket</i>15.000 XOF/an</h6>
+                    <h6 class="right col s6 m7">  La 1ère année est offerte .<i class="material-icons">announcement</i></h6>
+                     <a class="waves-effect waves-light btn blue darken  col s4 m5"  title="Ajouter dans le Panier" onclick="ajouterPanier('Descktop');" id="ajdesk2"><i class="material-icons left" >add</i></a>
+              </p>
+                </div>
+        </div>
+
+         <div class="card col s12 m12">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Mon panier<i class="material-icons right">visibility</i></span>
+                    <table class="responsive-table" >
+
+                        <thead>
+                          <tr>
+                              <th data-field="Type">Type</th>
+                              <th data-field="Nombre">Nombre</th>
+                              <th data-field="price">Price</th>
+                          </tr>
+                        </thead>
+
+                          <tbody id="panier">
+                      
+                          </tbody>
+                        
+                      </table>
+
+                </div>
+        </div>
+
+        <div class="col s12 m12">
+            
+            
+        </div>
     
      <!-- Commande -->
 
-  <!-- Modal Structure -->
+  <!-- Modal Structure 
   <div id="modal1" class="modal modal-fixed-footer col s8 m8  ">
     <div class="modal-content">
       <h4 class="center"><i class="material-icons" style="margin-right:2%">shopping_basket</i>Commande QuizzBuzzer </h4>
@@ -315,32 +396,10 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat  btn">Terminer</a>
     </div>
   </div>
+            -->
             
-            
-             <div class="card col s12 m6" >
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/webapp/2017-04-26 17_00_03-.png">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"> QuizzBuzzer Logiciel<i class="material-icons right">more_vert</i></span>
-             <a class="waves-effect waves-light btn blue darken" href="#modal1"><i class="material-icons left">shopping_cart</i>Commander</a>
-             <a class="waves-effect waves-light btn blue darken" href="http://quizzbuzzer.net/"><i class="material-icons left">visibility</i>voir</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">QuizzBuzzer Logiciel<i class="material-icons right">close</i></span>
-              <p>
-                <i class="material-icons">done_all</i> Stockage de la configuration et des
-                historiques des tournois en ligne.<br>
-                <i class="material-icons">done_all</i> 
-                Plus besoin d’internet une fois le match démarré.<br>
-                <i class="material-icons">done_all</i> Accessible depuis tout ordinateur disposant une connexion internet.
-                <hr>
-                <h6 class="teal-text col s12 m12"> <i class="material-icons">shopping_basket</i>15.000 XOF/an</h6>
-                <h6 class="right col s6 m7">  La 1ère année est offerte .<i class="material-icons">announcement</i></h6>
-                 <a class="waves-effect waves-light btn blue darken  col s4 m5" href="#modal1"><i class="material-icons left">shopping_cart</i>Commander</a>
-                </p>
-            </div>
-            </div>
+           
+    
             
           
         </div>
@@ -353,13 +412,14 @@
   <footer class="page-footer blue">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <div class="col l3 s4">
+          <h5 class="white-text">Contact Us</h5>
+          <p class="grey-text text-lighten-4"><a class="white-text" href="mailto:ikane@ikane.co"><i class="material-icons">email</i><br> ikane@ikane.co</a></p>
+          <p class="grey-text text-lighten-4"><i class="material-icons">phone</i>+221771048889</p>
 
 
         </div>
-         <div class="col l3 s3">
+         <div class="col l4 s4">
              <form>
                 <div class="input-field">
                   <input type="text" style="height:30px;" name="nom"/>
@@ -376,20 +436,21 @@
                 </div>
              </form>
          </div>
-        <div class="col l3 s12">
+        <div class="col l4 s4">
           <h5 class="white-text">Join us on social media </h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://web.facebook.com/JangandoSuite/"><img src="img/facebook-box.png"></img> <br> Facebook</a></li>
+            <li><a class="white-text" href="https://twitter.com/jangandoSuite"><img src="img/Twitter.png"><br>Twitter</img></a></li>
+             <br>
+             <li></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="white-text" href="www.ikane.co">IkaneCo © 2017 All right reserved </a>
+     <a class="white-text" href="http://academy.jangando.com/.co">
+    Optimisé  par IKANESOFT © 2017-Jangando</a>
       </div>
     </div>
   </footer>
@@ -399,6 +460,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
     <script>
 	   $(document).ready(function(){
       $('.slider').slider();
